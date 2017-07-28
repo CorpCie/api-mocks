@@ -37,8 +37,11 @@
     "eslint-config-meetic": "4.0.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
-    "json-schema-faker": "^0.4.2",
     "lodash": "^4.17.4",
     "module-alias": "^2.0.0"
+  },
+  "dependencies": {
+    "json-schema-faker": "^0.4.2",
+    "lodash": "^4.17.4"
   }
 }

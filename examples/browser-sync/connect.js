@@ -15,8 +15,8 @@ module.exports = gulp.task('connect-browser-sync', () => {
     ghostMode: false,
     middleware: [
       {
-        route: '/myapi',
-        handle: routesMapping.middleware
+        route: '/myapi', // api routes start for all your uris
+        handle: routesMapping.middleware // API specifications (created by ApiMocks instance)
       }
     ]
   });

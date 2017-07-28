@@ -11,9 +11,10 @@ module.exports = gulp.task('connect-gulp', () => {
     open: false,
     middleware() {
       let mockMiddleware = (request, response, next) => {
-        let apiTest = /^\/myapi/;
-        let isApiUrl = apiTest.test(request.url);
-        request.url = request.url.replace(apiTest, '');
+        let apiTest = /^\/myapi/; // api routes start for all your uris
+        let isApiUrl = apiTest.test(request.url); // check request url
+        request.url = request.url.replace(apiTest, ''); // replace root url pattern
+        // if api match use mocked API
         return isApiUrl && routesMapping.middleware(request, response, next) || next();
       };
 

@@ -1,8 +1,8 @@
 {
   "name": "api-mocks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Middleware for mocking any api",
-  "main": "dist/index.js",
+  "main": "index.js",
   "_moduleAliases": {
     "api-mocks": "./index.js"
   },
